@@ -9,5 +9,5 @@ sudo apt update
 sudo apt install podman
 
 
-echo "tmpfs /tmp tmpfs nosuid,nodev,noatime 0 0" >> /etc/fstab
+echo "tmpfs /tmp tmpfs nosuid,nodev,noatime 0 0" | tee -a /etc/fstab
 
